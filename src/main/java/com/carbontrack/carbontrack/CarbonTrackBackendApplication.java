@@ -48,7 +48,7 @@ class FraudDetector {
 		
 		Map<String,String> fraudulentUsersWithReason = new HashMap();
 
-		// Group transactions by userId
+		// Group transactions by userId field
 		Map<String, List<Transaction>> groupedByUser =
 				transactions.stream().collect(Collectors.groupingBy(t -> t.userId));
 
