@@ -1,0 +1,122 @@
+2025-11-13T08:50:18.962+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] c.c.c.CarbonTrackBackendApplicationTests : Starting CarbonTrackBackendApplicationTests using Java 21.0.7 with PID 8756 (started by Pranoti in D:\Softwares\carbontrack)
+2025-11-13T08:50:18.963+01:00 DEBUG 8756 --- [CarbonTrack Backend] [Test worker] c.c.c.CarbonTrackBackendApplicationTests : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13T08:50:18.964+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] c.c.c.CarbonTrackBackendApplicationTests : The following 1 profile is active: "prod"
+2025-11-13T08:50:20.495+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13T08:50:20.678+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interface.
+2025-11-13T08:50:21.008+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fffc687e-10c0-3282-9cdb-e0d72688de17
+2025-11-13T08:50:21.751+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-13T08:50:22.506+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@621a387f
+2025-11-13T08:50:22.509+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-13T08:50:22.637+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13T08:50:22.714+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13T08:50:22.752+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-13T08:50:23.063+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13T08:50:23.263+01:00  WARN 8756 --- [CarbonTrack Backend] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-13T08:50:23.349+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13T08:50:24.422+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13T08:51:18.128+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13T08:51:19.639+01:00  WARN 8756 --- [CarbonTrack Backend] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-13T08:51:23.336+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-13T08:51:24.704+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] c.r.stream.impl.StreamEnvironment        : Connecting to localhost with guest user, assuming development environment
+2025-11-13T08:51:24.704+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] c.r.stream.impl.StreamEnvironment        : Using address resolver to always connect to localhost
+2025-11-13T08:51:26.739+01:00  INFO 8756 --- [CarbonTrack Backend] [Test worker] c.c.c.CarbonTrackBackendApplicationTests : Started CarbonTrackBackendApplicationTests in 68.153 seconds (process running for 69.747)
+2025-11-13T08:51:29.460+01:00  INFO 8756 --- [CarbonTrack Backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13T08:51:29.462+01:00  INFO 8756 --- [CarbonTrack Backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-13T08:51:29.493+01:00  INFO 8756 --- [CarbonTrack Backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-13T08:54:33.921+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : Starting CarbonTrackBackendApplication using Java 21.0.7 with PID 27092 (D:\Softwares\carbontrack\bin\main started by Pranoti in D:\Softwares\carbontrack)
+2025-11-13T08:54:33.923+01:00 DEBUG 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13T08:54:33.924+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : The following 1 profile is active: "prod"
+2025-11-13T08:54:34.000+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Pranoti\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\3.0.6\12187beb6321e6a7fdc2ef4d196e16c8c58a3a1\hk2-3.0.6.jar referenced one or more files that do not exist: file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-utils.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.annotation-api.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/jakarta.inject-api.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-api.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/aopalliance-repackaged.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-core.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-locator.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/javassist.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/hk2-runlevel.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/class-model.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-analysis.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-commons.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-tree.jar,file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/3.0.6/12187beb6321e6a7fdc2ef4d196e16c8c58a3a1/asm-util.jar
+2025-11-13T08:54:34.001+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Pranoti\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/Pranoti/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+2025-11-13T08:54:34.001+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13T08:54:34.001+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13T08:54:35.664+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13T08:54:35.798+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interface.
+2025-11-13T08:54:36.150+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbb27de9-3f51-3c96-9f93-ee99ce307556
+2025-11-13T08:54:37.070+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-13T08:54:37.105+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-13T08:54:37.106+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13T08:54:37.184+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-13T08:54:37.184+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3160 ms
+2025-11-13T08:54:37.409+01:00 DEBUG 27092 --- [CarbonTrack Backend] [restartedMain] c.c.carbontrack.config.JwtRequestFilter  : Filter 'jwtRequestFilter' configured for use
+2025-11-13T08:54:37.638+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-13T08:54:38.138+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@43dea128
+2025-11-13T08:54:38.139+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-13T08:54:38.218+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13T08:54:38.276+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13T08:54:38.336+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-13T08:54:38.625+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13T08:54:38.802+01:00  WARN 27092 --- [CarbonTrack Backend] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-13T08:54:38.887+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13T08:54:39.917+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13T08:55:33.877+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13T08:55:34.153+01:00  WARN 27092 --- [CarbonTrack Backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-13T08:55:34.778+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-13T08:55:35.227+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.r.stream.impl.StreamEnvironment        : Connecting to localhost with guest user, assuming development environment
+2025-11-13T08:55:35.227+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.r.stream.impl.StreamEnvironment        : Using address resolver to always connect to localhost
+2025-11-13T08:55:35.897+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-13T08:55:36.032+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-13T08:55:36.060+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : Started CarbonTrackBackendApplication in 62.747 seconds (process running for 63.712)
+2025-11-13T08:56:58.279+01:00  INFO 27092 --- [CarbonTrack Backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13T08:56:58.280+01:00  INFO 27092 --- [CarbonTrack Backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-13T08:56:58.285+01:00  INFO 27092 --- [CarbonTrack Backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-11-13T09:11:33.080+01:00  INFO 27092 --- [CarbonTrack Backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (0 additions, 0 deletions, 20 modifications)
+2025-11-13T09:11:33.094+01:00  INFO 27092 --- [CarbonTrack Backend] [Thread-8] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13T09:11:33.110+01:00  INFO 27092 --- [CarbonTrack Backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-13T09:11:34.198+01:00  INFO 27092 --- [CarbonTrack Backend] [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13T09:11:34.205+01:00  INFO 27092 --- [CarbonTrack Backend] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-13T09:11:34.218+01:00  INFO 27092 --- [CarbonTrack Backend] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-13T09:11:34.421+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : Starting CarbonTrackBackendApplication using Java 21.0.7 with PID 27092 (D:\Softwares\carbontrack\bin\main started by Pranoti in D:\Softwares\carbontrack)
+2025-11-13T09:11:34.422+01:00 DEBUG 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13T09:11:34.422+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : The following 1 profile is active: "prod"
+2025-11-13T09:11:34.875+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13T09:11:34.886+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-11-13T09:11:34.964+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbb27de9-3f51-3c96-9f93-ee99ce307556
+2025-11-13T09:11:35.053+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-13T09:11:35.054+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-13T09:11:35.054+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13T09:11:35.106+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-13T09:11:35.106+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 677 ms
+2025-11-13T09:11:35.154+01:00 DEBUG 27092 --- [CarbonTrack Backend] [restartedMain] c.c.carbontrack.config.JwtRequestFilter  : Filter 'jwtRequestFilter' configured for use
+2025-11-13T09:11:35.169+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-11-13T09:11:35.259+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@5cc37987
+2025-11-13T09:11:35.259+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-11-13T09:11:35.274+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13T09:11:35.281+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-13T09:11:35.300+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13T09:11:35.306+01:00  WARN 27092 --- [CarbonTrack Backend] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-13T09:11:35.311+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13T09:11:35.383+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13T09:12:29.744+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13T09:12:29.797+01:00  WARN 27092 --- [CarbonTrack Backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-13T09:12:29.878+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-13T09:12:29.929+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.r.stream.impl.StreamEnvironment        : Connecting to localhost with guest user, assuming development environment
+2025-11-13T09:12:29.929+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.r.stream.impl.StreamEnvironment        : Using address resolver to always connect to localhost
+2025-11-13T09:12:30.015+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-13T09:12:30.049+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-13T09:12:30.060+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] c.c.c.CarbonTrackBackendApplication      : Started CarbonTrackBackendApplication in 55.694 seconds (process running for 1077.712)
+2025-11-13T09:12:30.063+01:00  INFO 27092 --- [CarbonTrack Backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-13T09:13:01.185+01:00  INFO 27092 --- [CarbonTrack Backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13T09:13:01.185+01:00  INFO 27092 --- [CarbonTrack Backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-13T09:13:01.188+01:00  INFO 27092 --- [CarbonTrack Backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
