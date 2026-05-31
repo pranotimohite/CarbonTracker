@@ -1,5 +1,6 @@
-package com.carbontrack.carbontrack.entity;
+package com.carbontrack.activity_service.entity;
 
+import com.carbontrack.activity_service.entity.User;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;

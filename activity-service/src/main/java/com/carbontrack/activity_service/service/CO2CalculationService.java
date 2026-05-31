@@ -1,4 +1,4 @@
-package com.carbontrack.carbontrack.service;
+package com.carbontrack.activity_service.service;
 
 import org.springframework.stereotype.Service;
 

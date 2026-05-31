@@ -1,8 +1,7 @@
-package com.carbontrack.carbontrack.repository;
+package com.carbontrack.activity_service.repository;
 
-import com.carbontrack.carbontrack.dto.ChartDataDTO;
-import com.carbontrack.carbontrack.entity.Activity;
-import com.carbontrack.carbontrack.entity.User;
+import com.carbontrack.activity_service.dto.ChartDataDTO;
+import com.carbontrack.activity_service.entity.Activity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -18,13 +17,15 @@ extends JpaRepository<Activity, Long> {
     @Query("SELECT a.type, SUM(a.co2Emitted) FROM Activity a WHERE a.user.id = :userId GROUP BY a.type")
     List<ChartDataDTO> getCO2ByType(Long userId);
 
-   /* // Recommended: Add to ActivityRepository
-    @Query("SELECT a.type, SUM(a.co2Emitted) FROM Activity a GROUP BY a.type")
-    Map<String, Double> getEmissionStats();*/
+    List<Activity> findByUserId(Long userId);
+    Page<Activity> findByUserId(Long userId, Pageable pageable);
 
-    Page<Activity> findByUser(User user, Pageable pageable);
+    // raw rows for stats conversion in service
+    @Query("SELECT a.type, SUM(a.co2Emitted) FROM Activity a WHERE a.user.id = :userId GROUP BY a.type")
+    List<Object[]> getEmissionStatsRaw(@Param("userId") Long userId);
 
-    @Query("SELECT new map(a.type as type, SUM(a.co2Emitted) as total) " +
+
+    /*@Query("SELECT new map(a.type as type, SUM(a.co2Emitted) as total) " +
             "FROM Activity a WHERE a.user.id = :userId GROUP BY a.type")
-    Map<String, Double> getEmissionStats(@Param("userId") Long userId);
+    Map<String, Double> getEmissionStats(@Param("userId") Long userId);*/
 }

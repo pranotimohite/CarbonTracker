@@ -1,4 +1,4 @@
-package com.carbontrack.carbontrack.dto
+package com.carbontrack.activity_service.dto
 
 data class ChartDataDTO (
     val type: String,
