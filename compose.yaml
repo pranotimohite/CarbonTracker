@@ -1,7 +1,41 @@
+#services:
+#  carbontrack-backend:
+#    build: .
+#    container_name: carbontrack-backend
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@host.docker.internal:1521/XEPDB1
+#      SPRING_DATASOURCE_USERNAME: your_username
+#      SPRING_DATASOURCE_PASSWORD: your_password
+#      SPRING_DATASOURCE_DRIVER_CLASS_NAME: oracle.jdbc.OracleDriver
+#      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+#      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.OracleDialect
+#      SPRING_MAIN_LOG_LEVEL: DEBUG
+#      DEBUG: "true"
+#
+#version: '3.8'
+
+#  Single command will run the entire microservice - docker compose up
+
 services:
-  carbontrack-backend:
-    build: .
-    container_name: carbontrack-backend
+
+  discovery-service:
+    build: ./discovery-service
+    ports:
+      - "8761:8761"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@host.docker.internal:1521/XEPDB1
+      SPRING_DATASOURCE_USERNAME: your_username
+      SPRING_DATASOURCE_PASSWORD: your_password
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: oracle.jdbc.OracleDriver
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.OracleDialect
+      SPRING_MAIN_LOG_LEVEL: DEBUG
+      DEBUG: "true"
+
+  api-gateway:
+    build: ./api-gateway-service
     ports:
       - "8080:8080"
     environment:
@@ -13,3 +47,42 @@ services:
       SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.OracleDialect
       SPRING_MAIN_LOG_LEVEL: DEBUG
       DEBUG: "true"
+    depends_on:
+      - discovery-service
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@host.docker.internal:1521/XEPDB1
+      SPRING_DATASOURCE_USERNAME: your_username
+      SPRING_DATASOURCE_PASSWORD: your_password
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: oracle.jdbc.OracleDriver
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.OracleDialect
+      SPRING_MAIN_LOG_LEVEL: DEBUG
+      DEBUG: "true"
+    depends_on:
+      - discovery-service
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - discovery-service
+
+  activity-service:
+    build: ./activity-service
+    ports:
+      - "8083:8083"
+    depends_on:
+      - discovery-service
+
+  ai-service:
+    build: ./ai-service
+    ports:
+      - "8084:8084"
+    depends_on:
+      - discovery-service

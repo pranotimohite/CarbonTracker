@@ -5,12 +5,11 @@ pluginManagement {
 }
 rootProject.name = 'carbontrack-microservices'
 include(
-        'api-gateway-service',
-        'discovery-service',
+        'api-gateway',
+        'discovery-server',
         'auth-service',
         'user-service',
         'activity-service',
         'ai-service',
-        'common-library',
-        'shared-security-lib'
+        'common-library'
 )
