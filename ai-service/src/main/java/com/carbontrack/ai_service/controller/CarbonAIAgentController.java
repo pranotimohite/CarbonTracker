@@ -3,6 +3,9 @@ package com.carbontrack.carbontrack.controller;
 import com.carbontrack.carbontrack.entity.GenAIResponse;
 import com.carbontrack.carbontrack.entity.GenAiRequest;
 import com.carbontrack.carbontrack.service.UnifiedAIAgentService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -25,6 +28,11 @@ public class CarbonAIAgentController {
     private static final Logger logger = LoggerFactory.getLogger(CarbonAIAgentController.class);
 
     @PostMapping("/chat")
+    @Operation(summary = "AI Chat Agent", description = "Ask your question to this AI chat agent")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Response received from AI Agent"),
+            @ApiResponse(responseCode = "401", description = "Unauthorized - invalid or missing token")
+    })
     public ResponseEntity<GenAIResponse> chat(@Valid @RequestBody GenAiRequest request) {
         String prompt = request.getPrompt().trim();
 

@@ -1,10 +1,10 @@
-package com.carbontrack.carbontrack.dto;
+package com.carbontrack.user_service.dto;
 
-import com.carbontrack.carbontrack.entity.User;
+import com.carbontrack.user_service.entity.User;
+public class CustomUserDetails{
+//        implements com.carbontrack.carbontrack.dto.UserDetails {
 
-public class CustomUserDetails implements UserDetails {
-
-    private User user;
+    /*private User user;
 
     public CustomUserDetails(User user) {
         this.user = user;
@@ -17,6 +17,6 @@ public class CustomUserDetails implements UserDetails {
     @Override
     public String getUsername() {
         return user.getUsername();
-    }
+    }*/
 
 }

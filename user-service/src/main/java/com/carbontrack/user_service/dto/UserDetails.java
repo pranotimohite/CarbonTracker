@@ -1,6 +1,6 @@
-package com.carbontrack.carbontrack.dto;
+package com.carbontrack.user_service.dto;
 
-import org.springframework.security.core.GrantedAuthority;
+
 
 import java.util.Collection;
 

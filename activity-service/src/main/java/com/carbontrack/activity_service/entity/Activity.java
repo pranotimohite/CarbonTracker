@@ -17,7 +17,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @Getter
 @Setter
 @Table(name="ACTIVITY")
-public class Activity {
+public class  Activity {
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "activity_seq_gen")
     @SequenceGenerator(

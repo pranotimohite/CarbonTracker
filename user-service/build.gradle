@@ -19,7 +19,7 @@ repositories {
 }
 
 ext {
-	set('springCloudVersion', "2025.0.2")
+	set('springCloudVersion', "2023.0.3")
 }
 
 dependencies {
@@ -27,10 +27,26 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	// Spring Cloud
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-	compileOnly 'org.projectlombok:lombok'
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+	implementation 'org.springframework.kafka:spring-kafka'
+
+	// Swagger/OpenAPI
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:2.3.0'
+
+	// Database
 	runtimeOnly 'org.postgresql:postgresql'
+	runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
+
+	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	// Test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testCompileOnly 'org.projectlombok:lombok'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
@@ -48,5 +64,5 @@ tasks.named('test') {
 }
 
 springBoot {
-	mainClass = 'com.carbontrack.userservice.UserServiceApplication'
+	mainClass = 'com.carbontrack.user_service.UserServiceApplication'
 }

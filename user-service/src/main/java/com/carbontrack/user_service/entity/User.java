@@ -23,16 +23,30 @@ public class User {
     )
     private Long id;
 
+    @Column(name = "auth_id", unique = true)
+    private Long authId;   // maps to auth-service id
+
     private String username;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    @JsonIgnore
-    private List<Activity> activities = new ArrayList<>();
+    private String email;
 
-    // ✅ Constructors
+    private String password;
+
+    private String role;
+
+    // ❌ REMOVED: @OneToMany relationship with Activity
+    // Activity service owns Activity table in separate database
+    // To fetch user activities, use ActivityServiceClient
+
     public User() {}
 
     public User(String username) {
         this.username = username;
+    }
+
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
     }
 }
